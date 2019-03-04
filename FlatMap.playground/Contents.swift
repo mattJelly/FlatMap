@@ -24,7 +24,7 @@ let year2 = YearGroup(name: "Year Two", pupils: [anna, carol])
 let swiftSchool = School(name: "Swift School", yearGroups: [year1, year2])
 
 //Flat map takes a year group and returns a new Sequence, in our case an array of pupils
-//We can use trailing closure syntax and immediately being the closure after the method
+//We can use trailing closure syntax and immediately begin the closure after the method
 //As the closure is the last parameter in the function declaration
 let allPupils = swiftSchool.yearGroups.flatMap { (yearGroup) -> [Pupil] in
     return yearGroup.pupils
